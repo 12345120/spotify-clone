@@ -1,0 +1,62 @@
+.body {
+  flex: 0.8 0 0;
+  height: 100vh;
+  background: linear-gradient(#665794, rgba(0, 0, 0, 1));
+  padding: 30px;
+  color: white;
+  /* overflow-y: overlay; */
+  overflow-y: scroll;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body__info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.body__info > img {
+  /* width: 30%; */
+  height: 20vw;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.8);
+}
+
+.body__infoText > h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.body__infoText > p {
+  font-size: 0.9rem;
+}
+
+.body__icons {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.body__songs {
+  margin: 20px -30px;
+  margin-bottom: 100px;
+}
+
+/* important used here bc they are Mui icons?
+makes sense bc just like <Link> has the greatest specificity, 
+Mui elements could as well  */
+.body__shuffle {
+  font-size: 80px !important;
+}
+
+.body__shuffle:hover {
+  transition: 100ms transform ease-in;
+  transform: scale(1.08);
+}

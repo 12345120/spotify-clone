@@ -1,0 +1,68 @@
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #282828;
+  padding: 20px;
+  border-top: 1px solid rgba(211,211,211, 0.2)
+}
+
+.footer__left {
+  flex: 0.3 0 0;
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 300px;
+}
+
+.footer__center {
+  flex: 0.4 0 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  max-width: 290px;
+}
+
+.footer__right {
+  flex: 0.3 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer__albumLogo {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.footer__green {
+  color: green;
+}
+
+.footer__songInfo > h4 {
+  margin-bottom: 5px;
+}
+
+.footer__songInfo > p {
+  font-size: 0.8rem;
+}
+
+.footer__icon:hover,
+.footer__green:hover {
+  transition: transform 0.2s ease-in-out;
+  /* IMPORTANT USED HERE BC OF MUI ? */
+  transform: scale(1.2) !important;
+}
+
+/* WHY THE * (ASTERISK?) */
+.footer__right * .MuiSlider-root {
+  color: green;
+}

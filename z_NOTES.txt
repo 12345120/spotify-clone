@@ -1,0 +1,75 @@
+https://reactjs.org/docs/composition-vs-inheritance.html
+- props.children --> built-in
+- props can be passed in destructuring assignment 
+export const StateProvider = ({ reducer, initialState, children}) => (
+  <StateContext.Provider value={useReducer(reducer, initialState)}> 
+    {children}
+  </StateContext.Provider>
+)
+--> here, {children} is part of the built-in props
+
+
+https://stackoverflow.com/questions/38215572/should-you-use-break-in-switch-case-loops/38215661
+- switch statement: break needed? 
+- not necessarily, but it changes the way it functions 
+- it is the difference between:
+  - if, else if, ..., else 
+  - if, if, if, ... if 
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient()
+- background is the shorthand for background-color, -image, etc. 
+- linear-gradient belongs to the <image> data type --> background-color doesn't work
+  - background, or background-image 
+
+
+- react components's first letter needs to be in uppercase
+
+
+https://stackoverflow.com/questions/63520725/react-hook-renders-object-object
+- console.log("sth" + object) rendering [Object object]
+- concatenation(+) implicitly calls result.toString()
+- do: console.log("sth", object); isntead *********
+
+
+
+https://next.material-ui.com/customization/how-to-customize/
+- Material ui class name
+- .Mui[Component name]-[name of slot]
+- ex) .MuiSlider-root 
+https://next.material-ui.com/styles/advanced/#class-names 
+- -root seems to include everything
+
+
+- Avatar (Mui component)
+  - The image or Letter imge thing 
+- Slider (Mui component)
+- Grid (Mui component)
+  - xs={12} or just xs (bc there's a default val)
+  - specify attributes within tag (how Grid of Mui works) 
+  
+  
+
+/* "!important" used here bc they are Mui icons?
+makes sense bc just like <Link> has the greatest specificity, 
+Mui elements could as well  */
+
+
+.MuiSvgIcon-root
+- all svg Mui icons I guess
+
+
+overflow-y: overlay; --> creates scrollbar if it exceeds the page height (I think)
+- overflow-y: scroll; --> does the same exact thing and is intellisense supported
+::-webkit-scrollbar {
+  display: none; 
+}
+- scroll bar visibility 
+
+
+// https://developer.spotify.com/documentation/general/guides/authorization-guide/#implicit-grant-flow
+- spotify grant flows (authorization)
+https://developer.spotify.com/
+- spotify dev dashboard 
+https://developer.spotify.com/documentation/web-api/reference/#endpoint-get-a-list-of-current-users-playlists
+- spotify api reference
